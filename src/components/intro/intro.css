@@ -1,0 +1,170 @@
+.intro {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.intro .left {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  overflow: hidden;
+}
+
+.intro .left .imgContainer {
+  width: 700px;
+  height: 700px;
+  background-color: crimson;
+  border-radius: 50%;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .intro .left .imgContainer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.intro .left .imgContainer img {
+  height: 90%;
+}
+
+@media (max-width: 768px) {
+  .intro .left .imgContainer img {
+    height: 50%;
+  }
+}
+
+.intro .right {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  position: relative;
+}
+
+.intro .right .wrapper {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .intro .right .wrapper {
+    padding-left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.intro .right .wrapper h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .intro .right .wrapper h1 {
+    font-size: 40px;
+  }
+}
+
+.intro .right .wrapper h2 {
+  font-size: 35px;
+}
+
+.intro .right .wrapper h3 {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .intro .right .wrapper h3 {
+    font-size: 20px;
+  }
+}
+
+.intro .right .wrapper h3 span {
+  color: crimson;
+}
+
+.intro .right .wrapper h3 .ityped-cursor {
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.intro .right a {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+
+.intro .right img {
+  width: 30px;
+  height: 30px;
+  -webkit-animation: arrowBlink 2s infinite;
+          animation: arrowBlink 2s infinite;
+}
+
+@-webkit-keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=intro.css.map */

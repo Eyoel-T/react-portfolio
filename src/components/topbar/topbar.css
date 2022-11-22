@@ -1,0 +1,115 @@
+.topbar {
+  background-color: white;
+  color: #15023a;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.topbar .wrapper {
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar .wrapper .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar .wrapper .left .logo {
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 40px;
+}
+
+.topbar .wrapper .left .itemContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .topbar .wrapper .left .itemContainer {
+    display: none;
+  }
+}
+
+.topbar .wrapper .left .itemContainer .icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.topbar .wrapper .left .itemContainer span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.topbar .wrapper .right .hamburger {
+  width: 32px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.topbar .wrapper .right .hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: #15023a;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.topbar.active {
+  background-color: #15023a;
+  color: white;
+}
+
+.topbar.active .hamburger span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: white;
+}
+
+.topbar.active .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.topbar.active .hamburger span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: white;
+}
+/*# sourceMappingURL=topbar.css.map */

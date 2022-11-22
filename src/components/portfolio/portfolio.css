@@ -1,0 +1,140 @@
+.portfolio {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio h1 {
+  font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .portfolio h1 {
+    font-size: 20px;
+  }
+}
+
+.portfolio ul {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .portfolio ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.portfolio ul li {
+  margin-right: 50px;
+  font-size: 14px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .portfolio ul li {
+    margin-right: 20px;
+  }
+}
+
+.portfolio ul li.active {
+  background-color: #15023a;
+  color: white;
+  border-radius: 5px;
+}
+
+.portfolio .container {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .portfolio .container {
+    width: 100%;
+  }
+}
+
+.portfolio .container .item {
+  border-radius: 20px;
+  width: 220px;
+  height: 150px;
+  margin: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid lightgray;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .portfolio .container .item {
+    width: 130px;
+    height: 100px;
+  }
+}
+
+.portfolio .container .item h3 {
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+}
+
+.portfolio .container .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.portfolio .container .item:hover {
+  background-color: #15023a;
+}
+
+.portfolio .container .item:hover img {
+  opacity: 0.2;
+  z-index: 0;
+}
+/*# sourceMappingURL=portfolio.css.map */

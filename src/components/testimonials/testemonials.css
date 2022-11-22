@@ -1,0 +1,184 @@
+.testimonials {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .testimonials h1 {
+    font-size: 18px;
+  }
+}
+
+.testimonials .container {
+  width: 100%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+
+.testimonials .container .card {
+  width: 250px;
+  height: 70%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 15px -8px black;
+          box-shadow: 0px 0px 15px -8px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 20px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container .card {
+    height: 180px;
+    margin: 10px 0;
+  }
+}
+
+.testimonials .container .card.featured {
+  width: 300px;
+  height: 75%;
+  margin: 0 30px;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container .card.featured {
+    width: 250px;
+    height: 180px;
+    margin: 1px;
+  }
+}
+
+.testimonials .container .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.testimonials .container .card .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.testimonials .container .card .top img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimonials .container .card .top img.left, .testimonials .container .card .top img.right {
+  height: 25px;
+}
+
+.testimonials .container .card .top img.user {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 30px;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container .card .top img.user {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.testimonials .container .card .center {
+  padding: 10px;
+  background-color: #fff6f8;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container .card .center {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+.testimonials .container .card .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials .container .card .bottom h3 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container .card .bottom h3 {
+    font-size: 14px;
+  }
+}
+
+.testimonials .container .card .bottom h4 {
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .testimonials .container .card .bottom h4 {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=testemonials.css.map */
