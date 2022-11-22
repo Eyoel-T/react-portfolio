@@ -8,7 +8,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            genius.
+            john.
           </a>
           <div className="itemContainer">
             <Person className="icon" />
@@ -16,7 +16,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span>Eyoel@genius.com</span>
+            <span>john@gmail.com</span>
           </div>
         </div>
 
