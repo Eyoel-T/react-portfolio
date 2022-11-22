@@ -10,7 +10,7 @@ export default function Contact() {
       setReply("");
     }, 3000);
   };
-  //
+
   return (
     <div className="contact" id="contact">
       <div className="left">
