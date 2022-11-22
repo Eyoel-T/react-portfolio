@@ -9,7 +9,7 @@ import {
 import { useState } from "react";
 export default function Portfolio() {
   const [display, setDisplay] = useState(featuredPortfolio);
-
+  //
   const handelClick = (e) => {
     e.target.classList.add("active");
     const displayData = e.target.getAttribute("id");
